@@ -1,0 +1,73 @@
+{ 
+  "model": "Realme 16 Series", 
+
+  "auth": { 
+    "username": "aisprebooking", 
+    "password": "Usjf#7=Z$aVG" 
+  },
+
+  "mapPromotion": {
+    "BB": "เครื่องราคาพิเศษ เซ็นสัญญา (Best Buy) | Handset special price (Sign Contract)",
+    "HD": "เครื่องพร้อมแพ็กเกจ เซ็นสัญญา (Hot Deal) | Handset with Hot Deal package (Sign Contract)",
+    "R": "เครื่องเปล่าราคาปกติ | Handset regular price" 
+  },
+
+  "sno1": {
+    "phoneNumber": "0934009852", 
+    "promotionCount": 1,
+    "promotion": ["R"] 
+  },
+  "sno3": {
+    "phoneNumber": "0934009853", 
+    "promotionCount": 2,
+    "promotion": ["R","HD"] 
+  },
+  "sno4": {
+    "phoneNumber": "0934009854", 
+    "promotionCount": 2,
+    "promotion": ["R","HD"]
+  },
+  "sno5": {
+    "phoneNumber": "0934009857", 
+    "promotionCount": 1,
+    "promotion": ["R"] 
+  }, 
+  "sno6": {
+    "phoneNumber": "0934009859", 
+    "promotionCount": 1,
+    "promotion": ["R"] 
+  },
+  "sno7": {
+    "phoneNumber": "0934009862", 
+    "promotionCount": 3,
+    "promotion": ["BB","HD","R"] 
+  },
+  "sno8": {
+    "phoneNumber": "0934009869", 
+    "promotionCount": 2,
+    "promotion": ["R","HD"]
+  },
+  "sno9": {
+    "phoneNumber": "0934009871", 
+    "promotionCount": 1,
+    "promotion": ["R"] 
+  },
+  "sno10": {
+    "phoneNumber": "0934009861", 
+    "promotionCount": 2,
+    "promotion": ["R","HD"] 
+   },
+  "sno11": {
+    "phoneNumber": "0934009873", 
+    "promotionCount": 1,
+    "promotion": ["R"] 
+  },
+  "sno12": {
+    "phoneNumber": "0834071145", 
+    "promotionCount": 2,
+    "promotion": ["R","HD"]
+  }
+  
+}
+
+
