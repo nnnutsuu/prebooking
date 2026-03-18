@@ -1,10 +1,18 @@
 { 
-  "model": "Realme 16 Series", 
-
+  
   "auth": { 
     "username": "aisprebooking", 
     "password": "Usjf#7=Z$aVG" 
   },
+
+  "model": "HUAWEI Mate 80 Pro",
+  "product": [
+    {
+      "model": "Mate 80 Pro",
+      "color": ["ทอง | Gold", "ดำ | Black"],
+      "storage": ["512GB"]
+    }
+  ],
 
   "mapPromotion": {
     "BB": "เครื่องราคาพิเศษ เซ็นสัญญา (Best Buy) | Handset special price (Sign Contract)",

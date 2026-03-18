@@ -49,11 +49,11 @@ Cypress.Commands.add('selectDevice', () => {
 
 Cypress.Commands.add('checkPromotion', (promotionCount) => {
   cy.log(promotionCount)
-  const expectedOptions = [
-  { val: '3', regex: /เครื่องราคาพิเศษ เซ็นสัญญา \(Best Buy\)|Handset special price \(Sign Contract\)/ },
-  { val: '2', regex: /เครื่องพร้อมแพ็กเกจ เซ็นสัญญา \(Hot Deal\)|Handset with Hot Deal package \(Sign Contract\)/ },
-  { val: '1', regex: /เครื่องเปล่าราคาปกติ|Handset regular price/}
-  ];
+  //const expectedOptions = [
+  //{ val: '3', regex: /เครื่องราคาพิเศษ เซ็นสัญญา \(Best Buy\)|Handset special price \(Sign Contract\)/ },
+  //{ val: '2', regex: /เครื่องพร้อมแพ็กเกจ เซ็นสัญญา \(Hot Deal\)|Handset with Hot Deal package \(Sign Contract\)/ },
+  //{ val: '1', regex: /เครื่องเปล่าราคาปกติ|Handset regular price/}
+  //];
 
   cy.get('.option-selector-campaign', { timeout: 5000 })
       .should('have.length', promotionCount) // เช็คจำนวนให้ตรงกับ Array ที่เราตั้งไว้
@@ -69,8 +69,39 @@ Cypress.Commands.add('checkPromotion', (promotionCount) => {
     // ตรวจสอบ Text ด้วย Regex (รองรับ 2 ภาษา)
           //expect(actualText).to.match(expected.regex);
     // พิมพ์ log ออกมาดูผล (Optional)
-          
+})        
       
-  
+Cypress.Commands.add('checkProduct', (data) => {
+  // 1. วนลูปตามรุ่น (Products)
+      data.product.forEach((product) => {
+        
+        // 2. วนลูปตามสีของรุ่นนั้นๆ (Colors)
+        product.color.forEach((color) => {
+          
+          // 3. วนลูปตามความจุของรุ่นนั้นๆ (Storage)
+          product.storage.forEach((capacity) => {
+            
+          // 1. เลือกรุ่น (Model)
+            // สมมติว่าเป็นปุ่มที่มีข้อความชื่อรุ่น
+            cy.contains('.option-selector-model', product.model).click().should('have.class', 'active');
+
+            // 2. เลือกสี (Color)
+            // ค้นหาปุ่มสีที่ตรงกับข้อมูลในไฟล์
+            cy.contains('.color-option', color).click();
+
+            // 3. เลือกความจุ (Storage)
+            cy.contains('.option-storage', capacity).click();
+
+            // 4. Assertion: ตรวจสอบว่า "สรุปรายการที่เลือก" แสดงข้อมูลถูกต้อง
+            // เช่น หน้าเว็บอาจจะโชว์ "คุณเลือก: Huawei Mate 80 Pro+ สีฟ้า 16/1TB"
+            cy.log(`${product.model} สี${color} ความจุ${capacity}`);
+            
+
+            // (Optional) รีเซ็ตการเลือก หรือ Refresh หน้าถ้า UI ไม่ยอมให้เปลี่ยนข้ามรุ่น
+            // cy.reload()
+              
+          });
+        });
+      });
  
 })

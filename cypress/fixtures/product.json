@@ -1,0 +1,19 @@
+{  "model": "HUAWEI Mate 80 Pro",
+  "products": [
+    {
+      "model": "Mate 80 Pro+",
+      "colors": ["ขาว", "ดำ", "ฟ้า", "ชมพู"],
+      "storage": ["16/256GB", "16/512GB", "16/1TB"]
+    },
+    {
+      "model": "Mate 80 Pro",
+      "colors": ["ขาว", "ดำ", "เขียว"],
+      "storage": ["16/256GB", "16/512GB"]
+    },
+    {
+      "model": "Mate 80",
+      "colors": ["ขาว", "ดำ"],
+      "storage": ["16/256GB"]
+    }
+  ]
+}
