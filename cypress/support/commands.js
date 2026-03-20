@@ -25,14 +25,14 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 Cypress.Commands.add('login', (username, password) => {
-  cy.visit('/System4')
+  cy.visit('/System2')
   cy.get('#username').type(username)
   cy.get('#password').type(password)
   cy.get('button[type="submit"]').click()
 })
 
 Cypress.Commands.add('loginPhoneNumber', (model, phonenumber) => {
-  cy.title().should('include', 'Realme 16 Series')
+  cy.title().should('include', 'HUAWEI Mate 80 Pro')
   cy.get('#PhoneNumber').type(phonenumber)
   cy.get('#btnRequestOTP').click()
   cy.get('input[id="digit-1"]').type('2')
@@ -71,9 +71,10 @@ Cypress.Commands.add('checkPromotion', (promotionCount) => {
     // พิมพ์ log ออกมาดูผล (Optional)
 })        
       
-Cypress.Commands.add('checkProduct', (data) => {
+Cypress.Commands.add('checkProduct', (product) => {
   // 1. วนลูปตามรุ่น (Products)
-      data.product.forEach((product) => {
+      cy.log(product)
+      product.model.forEach((product) => {
         
         // 2. วนลูปตามสีของรุ่นนั้นๆ (Colors)
         product.color.forEach((color) => {

@@ -20,60 +20,135 @@
     "R": "เครื่องเปล่าราคาปกติ | Handset regular price" 
   },
 
-  "sno1": {
-    "phoneNumber": "0934009852", 
-    "promotionCount": 1,
-    "promotion": ["R"] 
-  },
-  "sno3": {
-    "phoneNumber": "0934009853", 
-    "promotionCount": 2,
-    "promotion": ["R","HD"] 
-  },
-  "sno4": {
-    "phoneNumber": "0934009854", 
-    "promotionCount": 2,
-    "promotion": ["R","HD"]
-  },
-  "sno5": {
-    "phoneNumber": "0934009857", 
-    "promotionCount": 1,
-    "promotion": ["R"] 
-  }, 
-  "sno6": {
-    "phoneNumber": "0934009859", 
-    "promotionCount": 1,
-    "promotion": ["R"] 
-  },
-  "sno7": {
-    "phoneNumber": "0934009862", 
-    "promotionCount": 3,
-    "promotion": ["BB","HD","R"] 
-  },
-  "sno8": {
-    "phoneNumber": "0934009869", 
-    "promotionCount": 2,
-    "promotion": ["R","HD"]
-  },
-  "sno9": {
-    "phoneNumber": "0934009871", 
-    "promotionCount": 1,
-    "promotion": ["R"] 
-  },
-  "sno10": {
-    "phoneNumber": "0934009861", 
-    "promotionCount": 2,
-    "promotion": ["R","HD"] 
+  "12whitelist":{
+    "sno1": {
+      "phoneNumber": "0934009852", 
+      "promotionCount": 1,
+      "promotion": ["R"] 
+    },
+    "sno3": {
+      "phoneNumber": "0934009853", 
+      "promotionCount": 2,
+      "promotion": ["R","HD"] 
+    },
+    "sno4": {
+      "phoneNumber": "0934009854", 
+      "promotionCount": 2,
+      "promotion": ["R","HD"]
+    },
+    "sno5": {
+     "phoneNumber": "0934009857", 
+     "promotionCount": 1,
+     "promotion": ["R"] 
+    }, 
+    "sno6": {
+     "phoneNumber": "0934009859", 
+     "promotionCount": 1,
+     "promotion": ["R"] 
+    },
+    "sno7": {
+     "phoneNumber": "0934009862", 
+     "promotionCount": 3,
+     "promotion": ["BB","HD","R"] 
+    },
+    "sno8": {
+     "phoneNumber": "0934009869", 
+     "promotionCount": 2,
+     "promotion": ["R","HD"]
+    },
+    "sno9": {
+     "phoneNumber": "0934009871", 
+     "promotionCount": 1,
+     "promotion": ["R"] 
+    },
+    "sno10": {
+      "phoneNumber": "0934009861", 
+      "promotionCount": 2,
+      "promotion": ["R","HD"] 
+    },
+    "sno11": {
+      "phoneNumber": "0934009873", 
+      "promotionCount": 1,
+      "promotion": ["R"] 
    },
-  "sno11": {
-    "phoneNumber": "0934009873", 
-    "promotionCount": 1,
-    "promotion": ["R"] 
+    "sno12": {
+      "phoneNumber": "0834071145", 
+      "promotionCount": 2,
+      "promotion": ["R","HD"]
+   }
   },
-  "sno12": {
-    "phoneNumber": "0834071145", 
-    "promotionCount": 2,
-    "promotion": ["R","HD"]
+
+  "whitelist15":{
+    "sno1": {
+      "phoneNumber": "0934009852", 
+      "promotionCount": 1,
+      "promotion": ["R"] 
+    },
+    "sno3": {
+      "phoneNumber": "0934009853", 
+      "promotionCount": 2,
+      "promotion": ["R","HD"] 
+    },
+    "sno4": {
+      "phoneNumber": "0934009855", 
+      "promotionCount": 2,
+      "promotion": ["R","HD"]
+    },
+    "sno5": {
+     "phoneNumber": "0934009857", 
+     "promotionCount": 1,
+     "promotion": ["R"] 
+    }, 
+    "sno6": {
+     "phoneNumber": "0934009859", 
+     "promotionCount": 1,
+     "promotion": ["R"] 
+    },
+    "sno7": {
+     "phoneNumber": "0934009863", 
+     "promotionCount": 3,
+     "promotion": ["BB","HD","R"] 
+    },
+    "sno8": {
+     "phoneNumber": "0934009875", 
+     "promotionCount": 2,
+     "promotion": ["R","HD"]
+    },
+    "sno9": {
+     "phoneNumber": "0934009871", 
+     "promotionCount": 1,
+     "promotion": ["R"] 
+    },
+    "sno10": {
+      "phoneNumber": "0934009862", 
+      "promotionCount": 3,
+      "promotion": ["BB","HD","R"] 
+    },
+    "sno11": {
+      "phoneNumber": "0934009869", 
+      "promotionCount": 2,
+      "promotion": ["HD","R"] 
+   },
+    "sno12": {
+      "phoneNumber": "0934009872", 
+      "promotionCount": 1,
+      "promotion": ["R"]
+   },
+   "sno13": {
+      "phoneNumber": "0934009861", 
+      "promotionCount": 2,
+      "promotion": ["HD","R"]
+   },
+   "sno14": {
+      "phoneNumber": "0934009873", 
+      "promotionCount": 1,
+      "promotion": ["R"]
+   },
+   "sno15": {
+      "phoneNumber": "0834071145", 
+      "promotionCount": 2,
+      "promotion": ["HD","R"]
+   }
   }
   
 }
